@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:0.12.10
+FROM hashicorp/terraform:0.12.20
 
 RUN apk add --update --no-cache \
     bash \
@@ -10,8 +10,8 @@ RUN apk add --update --no-cache \
     curl
 
 # install tflint
-RUN curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.6.0/tflint_linux_amd64.zip && unzip /tmp/tflint.zip -d /usr/local/bin
-RUN echo "4a8cfd03001c79cb9f4a85c8e195fff1a676656467acbc5d078d516df809f31a  /usr/local/bin/tflint" | sha256sum -c
+RUN curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.14.0/tflint_linux_amd64.zip && unzip /tmp/tflint.zip -d /usr/local/bin
+RUN echo "4908d30078ecbd3b732ce5c2caabad77b6b768d46397ae009dd8dab8a1cbf6ac /usr/local/bin/tflint" | sha256sum -c
 
 # install git-crypt
 RUN curl -L -o /tmp/git-crypt.tar.gz https://www.agwa.name/projects/git-crypt/downloads/git-crypt-0.6.0.tar.gz
