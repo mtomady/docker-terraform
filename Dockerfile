@@ -6,7 +6,8 @@ RUN apt-get update
 RUN apt-get install -y \
     curl \
     unzip \
-    git-crypt
+    git-crypt \
+    postgresql-client
 
 # install tflint
 RUN curl -L -o /tmp/tflint.zip https://github.com/terraform-linters/tflint/releases/download/v0.14.0/tflint_linux_amd64.zip
