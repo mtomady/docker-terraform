@@ -18,7 +18,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 RUN unzip awscliv2.zip
 RUN ./aws/install
 
-RUN curl -O https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.30_linux_amd64.zip
+RUN curl -O https://releases.hashicorp.com/terraform/0.12.30/terraform_0.12.30_linux_amd64.zip
 RUN unzip terraform_0.12.30_linux_amd64.zip
 RUN mv terraform /usr/local/bin/
 
