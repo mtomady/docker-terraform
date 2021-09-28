@@ -18,8 +18,8 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 RUN unzip awscliv2.zip
 RUN ./aws/install
 
-RUN curl -O https://releases.hashicorp.com/terraform/0.13.7/terraform_0.13.7_linux_amd64.zip
-RUN unzip terraform_0.13.7_linux_amd64.zip
+RUN curl -O https://releases.hashicorp.com/terraform/0.14.11/terraform_0.14.11_linux_amd64.zip
+RUN unzip terraform_0.14.11_linux_amd64.zip
 RUN mv terraform /usr/local/bin/
 
 RUN curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
