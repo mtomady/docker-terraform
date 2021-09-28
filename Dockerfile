@@ -22,7 +22,4 @@ RUN curl -O https://releases.hashicorp.com/terraform/0.13.7/terraform_0.13.7_lin
 RUN unzip terraform_0.13.7_linux_amd64.zip
 RUN mv terraform /usr/local/bin/
 
-RUN curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
-RUN dpkg -i session-manager-plugin.deb
-
 
